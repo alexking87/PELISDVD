@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/12/16 12:53:25.000.327,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/12/16 13:12:35.000.916,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\prueba.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2013/12/16 13:12:35.000.916,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\prueba.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/12/16 13:12:49.000.981,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Project1.dproj=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2013/12/17 12:33:29.000.063,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2013/12/17 12:44:16.000.744,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit2.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\AltaClientes.dfm</Transaction>
+    <Transaction>2013/12/17 12:44:16.000.744,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit2.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\AltaClientes.pas</Transaction>
+  </Transactions>
+</BorlandProject>
