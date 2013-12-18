@@ -1,0 +1,16 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  prueba in 'prueba.pas' {Form1},
+  AltaClientes in 'AltaClientes.pas' {fAltaClientes};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfAltaClientes, fAltaClientes);
+  Application.Run;
+end.

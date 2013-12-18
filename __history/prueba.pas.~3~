@@ -1,0 +1,37 @@
+unit prueba;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DBXMySQL, Data.DB, Data.SqlExpr,
+  Vcl.Menus, Data.Win.ADODB;
+
+type
+  TForm1 = class(TForm)
+    ADO: TADOConnection;
+    Menu: TMainMenu;
+    Clientes1: TMenuItem;
+    Alta1: TMenuItem;
+    BajaoModificacion1: TMenuItem;
+    Peliculas1: TMenuItem;
+    Alta2: TMenuItem;
+    BajaoModificacion2: TMenuItem;
+    Consulta1: TMenuItem;
+    Salir1: TMenuItem;
+    Ubicaciones1: TMenuItem;
+    ADODataSet1: TADODataSet;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+end.
