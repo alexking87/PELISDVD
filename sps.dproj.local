@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/12/19 09:37:20.000.178,=rtl.dcp</Transaction>
+    <Transaction>2013/12/19 09:37:32.000.766,=dbrtl.dcp</Transaction>
+    <Transaction>2013/12/19 09:37:32.000.746,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\db\procedures\sp_afi_clientes.pas</Transaction>
+    <Transaction>2013/12/19 09:37:32.000.796,=adortl.dcp</Transaction>
+    <Transaction>2013/12/19 10:02:52.331,=rtl.dcp</Transaction>
+    <Transaction>2013/12/19 10:03:26.200,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\sp_afi_clientes.pas</Transaction>
+    <Transaction>2013/12/19 10:03:26.210,=adortl.dcp</Transaction>
+    <Transaction>2013/12/19 10:03:26.210,=dbrtl.dcp</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,17 +1,16 @@
-DROP PROCEDURE IF EXISTS baseada1287.afi_clientes;
-
 DELIMITER $$
-CREATE PROCEDURE baseada1287.afi_clientes(
+CREATE DEFINER=`root1287`@`%` PROCEDURE `afi_clientes`(
 					prm_ape_nom 	VARCHAR(250),
 					prm_tel			VARCHAR(20),
 					prm_domicilio 	VARCHAR(500),
 					prm_correo 		VARCHAR(45),
 					prm_id			INT,
 					prm_baja		CHAR(2)
-)begin
+)
+begin
 	IF prm_baja = 'S' THEN
 	
-		UPDATE CLIENTES 
+		UPDATE clientes 
 		SET 	baja_fecha = GETDATE()
 		WHERE 	id_clientes = prm_id;
 	
@@ -19,7 +18,7 @@ CREATE PROCEDURE baseada1287.afi_clientes(
 	
 		if prm_id IS null THEN
 		
-			UPDATE CLIENTES
+			UPDATE clientes
 			SET ape_nom 	= prm_ape_nom,
 				num_tel 	= prm_tel,
 				domicilio 	= prm_domicilio,
@@ -29,7 +28,7 @@ CREATE PROCEDURE baseada1287.afi_clientes(
 		else
 		
 			INSERT INTO 
-			CLIENTES(
+			clientes(
 				ape_nom,
 				num_tel,
 				domicilio,
@@ -38,10 +37,10 @@ CREATE PROCEDURE baseada1287.afi_clientes(
 			)VALUES(
 				prm_ape_nom,
 				num_tel,
-				prm_domiclio,
+				prm_domicilio,
 				prm_correo
 			);	
 		end if;
 	end if;
 end$$
-
+DELIMITER ;

@@ -3,7 +3,8 @@ program Project1;
 uses
   Vcl.Forms,
   prueba in 'prueba.pas' {fPrincipal},
-  AltaClientes in 'AltaClientes.pas' {fAltaClientes};
+  AltaClientes in 'AltaClientes.pas' {fAltaClientes},
+  modulo in 'modulo.pas' {DataModule1: TDataModule};
 
 {$R *.res}
 

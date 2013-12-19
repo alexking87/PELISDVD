@@ -9,7 +9,6 @@ uses
 
 type
   TfPrincipal = class(TForm)
-    ADO: TADOConnection;
     Menu: TMainMenu;
     Clientes1: TMenuItem;
     Alta1: TMenuItem;

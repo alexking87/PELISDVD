@@ -15,17 +15,6 @@ object fPrincipal: TfPrincipal
   Position = poDesigned
   PixelsPerInch = 96
   TextHeight = 13
-  object ADO: TADOConnection
-    Connected = True
-    ConnectionString = 
-      'Provider=MSDASQL.1;Password=440378;Persist Security Info=True;Us' +
-      'er ID=root1287;Extended Properties="DSN=ODBC56 ANSI;DESCRIPTION=' +
-      'ANSI;SERVER=db4free.net;UID=root1287;PWD=440378;DATABASE=baseada' +
-      '1287;PORT=3306"'
-    LoginPrompt = False
-    Left = 456
-    Top = 192
-  end
   object Menu: TMainMenu
     Left = 144
     Top = 88
@@ -59,7 +48,6 @@ object fPrincipal: TfPrincipal
     end
   end
   object ADODataSet1: TADODataSet
-    Connection = ADO
     Parameters = <>
     Left = 360
     Top = 80
