@@ -1,10 +1,10 @@
 object fAltaClientes: TfAltaClientes
-  Left = 0
-  Top = 0
+  Left = 424
+  Top = 277
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Alta de clientes'
-  ClientHeight = 268
+  ClientHeight = 148
   ClientWidth = 452
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -13,6 +13,8 @@ object fAltaClientes: TfAltaClientes
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesigned
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -45,106 +47,139 @@ object fAltaClientes: TfAltaClientes
   end
   object cmbSalir: TButton
     Left = 368
-    Top = 123
+    Top = 115
     Width = 75
     Height = 25
     Caption = '&Salir'
+    ModalResult = 8
     TabOrder = 0
   end
   object cmbGrabar: TButton
     Left = 287
-    Top = 123
+    Top = 115
     Width = 75
     Height = 25
     Caption = '&Grabar'
     TabOrder = 1
     OnClick = cmbGrabarClick
   end
+  object txtApeNom: TEdit
+    Left = 104
+    Top = 8
+    Width = 339
+    Height = 21
+    CharCase = ecUpperCase
+    TabOrder = 2
+  end
   object txtCorreo: TEdit
     Left = 58
     Top = 48
     Width = 190
     Height = 21
-    TabOrder = 2
-  end
-  object txtDomicilio: TEdit
-    Left = 58
-    Top = 88
-    Width = 385
-    Height = 21
+    CharCase = ecUpperCase
     TabOrder = 3
   end
   object txtTelefono: TEdit
     Left = 306
     Top = 48
-    Width = 137
+    Width = 136
     Height = 21
+    CharCase = ecUpperCase
     TabOrder = 4
+    OnKeyPress = txtTelefonoKeyPress
   end
-  object txtApeNom: TDBEdit
-    Left = 104
-    Top = 8
-    Width = 339
+  object txtDomicilio: TEdit
+    Left = 58
+    Top = 88
+    Width = 384
     Height = 21
-    DataSource = clientes
-    MaxLength = 250
+    CharCase = ecUpperCase
     TabOrder = 5
   end
-  object DBEdit1: TDBEdit
-    Left = 104
-    Top = 240
-    Width = 339
-    Height = 21
-    DataSource = clientes
-    MaxLength = 250
-    TabOrder = 6
-  end
-  object afi_clientes: TADOStoredProc
-    Connection = DataModule1.ADO
-    ProcedureName = 'afi_clientes'
+  object afi_clientes: TADOQuery
+    Connection = ADO
+    CursorType = ctStatic
+    LockType = ltReadOnly
     Parameters = <
       item
         Name = 'prm_ape_nom'
+        Attributes = [paNullable]
         DataType = ftString
-        Size = -1
-        Value = ''
+        Precision = 255
+        Size = 255
+        Value = Null
       end
       item
         Name = 'prm_tel'
+        Attributes = [paNullable]
         DataType = ftString
-        Size = -1
-        Value = ''
+        Precision = 255
+        Size = 255
+        Value = Null
       end
       item
         Name = 'prm_domicilio'
+        Attributes = [paNullable]
         DataType = ftString
-        Size = -1
-        Value = ''
+        Precision = 255
+        Size = 255
+        Value = Null
       end
       item
         Name = 'prm_correo'
-        DataType = ftWideString
-        Size = -1
-        Value = ''
+        Attributes = [paNullable]
+        DataType = ftString
+        Precision = 255
+        Size = 255
+        Value = Null
       end
       item
         Name = 'prm_id'
+        Attributes = [paNullable]
         DataType = ftInteger
+        Precision = 255
+        Size = 255
         Value = 0
       end
       item
         Name = 'prm_baja'
-        DataType = ftWideString
-        Size = 3
+        DataType = ftString
+        Precision = 255
+        Size = 255
         Value = 'N'
+      end
+      item
+        Name = 'pro_id'
+        DataType = ftInteger
+        Direction = pdOutput
+        Value = Null
       end>
-    Prepared = True
-    Left = 16
+    SQL.Strings = (
+      'call `baseada1287`.`afi_clientes`('
+      ':prm_ape_nom,'
+      ':prm_tel, '
+      ':prm_domicilio,'
+      ':prm_correo,'
+      ':prm_id,'
+      ':prm_baja,'
+      ':pro_id'
+      ');')
+    Left = 152
     Top = 120
   end
   object clientes: TDataSource
     DataSet = afi_clientes
-    Left = 72
+    Left = 96
+    Top = 120
+  end
+  object ADO: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=MSDASQL.1;Password=440378;Persist Security Info=True;Us' +
+      'er ID=root1287;Data Source=MySQL ODBC ANSI'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Left = 48
     Top = 120
   end
 end

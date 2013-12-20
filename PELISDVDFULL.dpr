@@ -2,9 +2,9 @@ program PELISDVDFULL;
 
 uses
   Vcl.Forms,
-  prueba in 'prueba.pas' {fPrincipal},
+  Principal in 'Principal.pas' {fPrincipal},
   AltaClientes in 'AltaClientes.pas' {fAltaClientes},
-  modulo in 'modulo.pas' {DataModule1: TDataModule};
+  AltaPeliculas in 'AltaPeliculas.pas' {fAltaPeliculas};
 
 {$R *.res}
 
@@ -13,5 +13,7 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfPrincipal, fPrincipal);
   Application.CreateForm(TfAltaClientes, fAltaClientes);
+  Application.CreateForm(TfAltaPeliculas, fAltaPeliculas);
+  //Application.CreateForm(Tmodulos, modulos);
   Application.Run;
 end.

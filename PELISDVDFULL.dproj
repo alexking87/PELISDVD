@@ -76,7 +76,7 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="prueba.pas">
+        <DCCReference Include="Principal.pas">
             <Form>fPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
@@ -84,10 +84,9 @@
             <Form>fAltaClientes</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="modulo.pas">
-            <Form>DataModule1</Form>
+        <DCCReference Include="AltaPeliculas.pas">
+            <Form>fAltaPeliculas</Form>
             <FormType>dfm</FormType>
-            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

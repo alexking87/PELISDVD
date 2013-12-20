@@ -13,16 +13,18 @@ type
     cmbGrabar: TButton;
     Label1: TLabel;
     Label2: TLabel;
-    txtCorreo: TEdit;
-    txtDomicilio: TEdit;
     Label3: TLabel;
     Label4: TLabel;
-    txtTelefono: TEdit;
-    afi_clientes: TADOStoredProc;
+    afi_clientes: TADOQuery;
     clientes: TDataSource;
-    txtApeNom: TDBEdit;
-    DBEdit1: TDBEdit;
+    txtApeNom: TEdit;
+    txtCorreo: TEdit;
+    txtTelefono: TEdit;
+    txtDomicilio: TEdit;
+    ADO: TADOConnection;
     procedure cmbGrabarClick(Sender: TObject);
+    procedure txtTelefonoKeyPress(Sender: TObject; var Key: Char);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -49,17 +51,42 @@ implementation
 {$R *.dfm}
 
 procedure TfAltaClientes.cmbGrabarClick(Sender: TObject);
+var valor:integer;
+    resultado:integer;
 begin
    if validar(txtApeNom.Text ,txtTelefono.Text)=true then begin
      //seteo de parametros
+     ADO.Connected:=true;
      afi_clientes.Parameters.ParamByName('prm_ape_nom').Value := String(txtApeNom.Text);
      afi_clientes.Parameters.ParamByName('prm_tel').Value := txtTelefono.Text;
      afi_clientes.Parameters.ParamByName('prm_domicilio').Value := txtDomicilio.Text;
      afi_clientes.Parameters.ParamByName('prm_correo').Value := txtCorreo.Text;
      afi_clientes.Parameters.ParamByName('prm_id').Value := Null;
      afi_clientes.Parameters.ParamByName('prm_baja').Value := 'N';
-     afi_clientes.Open;
+     valor :=  Integer(afi_clientes.Parameters.ParamByName('pro_id').Value);
+     if valor = 1 then
+        showmessage('Alta de cliente satisfactoria')
+     else
+        showmessage('Ocurrio un error al grabar el alta');
+     ADO.Connected:=false;
    end;
+end;
+
+procedure TfAltaClientes.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  if Action = caHide then
+  begin
+     Hide;
+     Exit;
+  end;
+end;
+
+procedure TfAltaClientes.txtTelefonoKeyPress(Sender: TObject; var Key: Char);
+begin
+  if not(Key in ['0'..'9',#8]) then
+  begin
+    Key:=#0;
+  end;
 end;
 
 end.
