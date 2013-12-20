@@ -1,0 +1,10 @@
+unit modulo;
+interface
+uses
+  Data.Win.ADODB;
+
+var
+  ADO: TADOConnection;
+implementation
+
+end.

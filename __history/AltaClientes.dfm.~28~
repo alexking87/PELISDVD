@@ -1,0 +1,180 @@
+object fAltaClientes: TfAltaClientes
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Alta de clientes'
+  ClientHeight = 173
+  ClientWidth = 452
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 11
+    Width = 90
+    Height = 13
+    Caption = 'Apellido y Nombre:'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 51
+    Width = 37
+    Height = 13
+    Caption = 'Correo:'
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 91
+    Width = 44
+    Height = 13
+    Caption = 'Domicilio:'
+  end
+  object Label4: TLabel
+    Left = 254
+    Top = 51
+    Width = 46
+    Height = 13
+    Caption = 'Telefono:'
+  end
+  object cmbSalir: TButton
+    Left = 368
+    Top = 123
+    Width = 75
+    Height = 25
+    Caption = '&Salir'
+    TabOrder = 0
+  end
+  object cmbGrabar: TButton
+    Left = 287
+    Top = 123
+    Width = 75
+    Height = 25
+    Caption = '&Grabar'
+    TabOrder = 1
+    OnClick = cmbGrabarClick
+  end
+  object txtApeNom: TDBEdit
+    Left = 104
+    Top = 8
+    Width = 339
+    Height = 21
+    DataField = 'prm_ape_nom'
+    DataSource = clientes
+    MaxLength = 250
+    TabOrder = 2
+  end
+  object txtCorreo: TDBEdit
+    Left = 58
+    Top = 48
+    Width = 190
+    Height = 21
+    DataField = 'prm_correo'
+    DataSource = clientes
+    MaxLength = 250
+    TabOrder = 3
+  end
+  object txtTelefono: TDBEdit
+    Left = 306
+    Top = 48
+    Width = 137
+    Height = 21
+    DataField = 'prm_tel'
+    DataSource = clientes
+    MaxLength = 250
+    TabOrder = 4
+  end
+  object txtDomicilio: TDBEdit
+    Left = 58
+    Top = 88
+    Width = 385
+    Height = 21
+    DataField = 'prm_domicilio'
+    DataSource = clientes
+    MaxLength = 250
+    TabOrder = 5
+  end
+  object afi_clientes: TADOQuery
+    Connection = DataModule1.ADO
+    Parameters = <
+      item
+        Name = 'prm_ape_nom'
+        Attributes = [paNullable]
+        DataType = ftString
+        Precision = 255
+        Size = 255
+        Value = Null
+      end
+      item
+        Name = 'prm_tel'
+        Attributes = [paNullable]
+        DataType = ftString
+        Precision = 255
+        Size = 255
+        Value = Null
+      end
+      item
+        Name = 'prm_domicilio'
+        Attributes = [paNullable]
+        DataType = ftString
+        Precision = 255
+        Size = 255
+        Value = Null
+      end
+      item
+        Name = 'prm_correo'
+        Attributes = [paNullable]
+        DataType = ftString
+        Precision = 255
+        Size = 255
+        Value = Null
+      end
+      item
+        Name = 'prm_id'
+        Attributes = [paNullable]
+        DataType = ftString
+        Precision = 255
+        Size = 255
+        Value = '0'
+      end
+      item
+        Name = 'prm_baja'
+        Attributes = [paNullable]
+        DataType = ftString
+        Precision = 255
+        Size = 255
+        Value = 'N'
+      end
+      item
+        Name = 'pro_id'
+        Attributes = [paNullable]
+        DataType = ftString
+        Precision = 255
+        Size = 255
+        Value = Null
+      end>
+    SQL.Strings = (
+      'call afi_clientes('
+      ':prm_ape_nom,'
+      ':prm_tel, '
+      ':prm_domicilio,'
+      ':prm_correo,'
+      ':prm_id,'
+      ':prm_baja,'
+      ':pro_id'
+      ')')
+    Left = 152
+    Top = 120
+  end
+  object clientes: TDataSource
+    DataSet = afi_clientes
+    Left = 96
+    Top = 120
+  end
+end
