@@ -1,0 +1,47 @@
+unit Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DBXMySQL, Data.DB, Data.SqlExpr,
+  Vcl.Menus, Data.Win.ADODB, AltaClientes,AltaPeliculas;
+
+type
+  TfPrincipal = class(TForm)
+    Menu: TMainMenu;
+    Clientes1: TMenuItem;
+    Alta1: TMenuItem;
+    BajaoModificacion1: TMenuItem;
+    Peliculas1: TMenuItem;
+    Alta2: TMenuItem;
+    BajaoModificacion2: TMenuItem;
+    Consulta1: TMenuItem;
+    Salir1: TMenuItem;
+    Ubicaciones1: TMenuItem;
+    procedure Alta1Click(Sender: TObject);
+    procedure Alta2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fPrincipal: TfPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfPrincipal.Alta1Click(Sender: TObject);
+begin
+  fAltaClientes.ShowModal;
+end;
+
+procedure TfPrincipal.Alta2Click(Sender: TObject);
+begin
+  fAltaPeliculas.ShowModal;
+end;
+
+end.

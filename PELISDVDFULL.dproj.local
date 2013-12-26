@@ -2,26 +2,26 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2013/12/16 12:53:25.000.327,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2013/12/16 13:12:35.000.916,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\prueba.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2013/12/16 13:12:35.000.916,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\prueba.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/12/16 13:12:35.000.916,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\prueba.dfm</Transaction>
+    <Transaction>2013/12/16 13:12:35.000.916,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\prueba.pas</Transaction>
     <Transaction>2013/12/16 13:12:49.000.981,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Project1.dproj=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2013/12/17 12:33:29.000.063,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2013/12/17 12:44:16.000.744,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit2.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\AltaClientes.pas</Transaction>
-    <Transaction>2013/12/17 12:44:16.000.744,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit2.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\AltaClientes.dfm</Transaction>
+    <Transaction>2013/12/17 12:44:16.000.744,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\AltaClientes.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2013/12/17 12:44:16.000.744,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\AltaClientes.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit2.dfm</Transaction>
     <Transaction>2013/12/19 09:09:55.000.653,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2013/12/19 09:14:28.000.646,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\modulo.pas</Transaction>
+    <Transaction>2013/12/19 09:14:28.000.646,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\modulo.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2013/12/19 09:17:11.000.850,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\modulo.pas=</Transaction>
     <Transaction>2013/12/19 09:17:24.000.949,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2013/12/19 09:17:44.000.788,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\modulo.pas</Transaction>
-    <Transaction>2013/12/19 09:17:44.000.788,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\modulo.dfm</Transaction>
+    <Transaction>2013/12/19 09:17:44.000.788,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\modulo.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/12/19 09:17:44.000.788,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\modulo.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>2013/12/19 09:55:13.000.121,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\db\procedures\sp_afi_clientes.pas</Transaction>
     <Transaction>2013/12/19 10:00:15.000.987,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\db\procedures\sp_afi_clientes.pas=</Transaction>
-    <Transaction>2013/12/20 16:28:47.000.247,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\PELISDVDFULL.dproj=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2013/12/20 16:28:47.000.247,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Project1.dproj=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\PELISDVDFULL.dproj</Transaction>
     <Transaction>2013/12/23 16:36:16.000.784,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\modulo.pas=</Transaction>
-    <Transaction>2013/12/26 11:25:59.997,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2013/12/26 11:26:20.697,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\AltaPeliculas.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2013/12/26 11:26:20.697,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\AltaPeliculas.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2013/12/26 16:09:21.046,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Principal.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\prueba.dfm</Transaction>
-    <Transaction>2013/12/26 16:09:21.046,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Principal.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\prueba.pas</Transaction>
+    <Transaction>2013/12/26 11:25:59.000.997,=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/12/26 11:26:20.000.697,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\AltaPeliculas.pas</Transaction>
+    <Transaction>2013/12/26 11:26:20.000.697,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\AltaPeliculas.dfm</Transaction>
+    <Transaction>2013/12/26 16:09:21.000.046,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\prueba.dfm=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Principal.dfm</Transaction>
+    <Transaction>2013/12/26 16:09:21.000.046,C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\prueba.pas=C:\Documents and Settings\Sistemas\Mis documentos\RAD Studio\Projects\Principal.pas</Transaction>
   </Transactions>
 </BorlandProject>
